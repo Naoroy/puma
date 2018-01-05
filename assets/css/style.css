@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+header {
+    width: 100%;
+    background-color: orangered;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+#content-wrap {
+    /* position: absolute; */
+    margin-top: 150px;
+    width: 756px;
+    margin: auto;
+}
+
+#logo-street {
+    display: flex;
+    justify-content: center;
+    height: 72px;
+}
+
+#site-title {
+    height: 28px;
+    background: black;
+    color: rgba(255,255,255,.7);
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    margin: 0; 
+}
+
+nav {
+    height: 50px;
+}
+
+.navbar-collapse {
+    background: white;
+    width: 100vw;
+}
+/* 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 50px;
+} */
+
+nav {
+    background: white;
+}
+
+/* close header */
+
+/* open video section */
+
+figure#logo-puma {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-puma img {
+    margin-top: 50px;
+    height: 72px;
+}
+
+.split {
+    width: 100px;
+    height: 3px;
+    background-color: orangered;
+    border: none;
+    margin: 15px auto;
+}
+
+#video-background {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 505px;
+    /* margin-top: 60px */
+    overflow: hidden
+}
+
+.btn-wrap {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.offre {
+    width: 150px;
+    margin: auto;
+}
+article#video {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* height: 505px;  65vh ??? */
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center
+    
+}
+
+#video video {
+    height: 140%;
+    /* background: black */
+}
+
+
+/* close video section */
+
+/* open promo */
+
+.promo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 756px;
+    margin: auto;
+    align-items: start
+}
+
+
+
+.promo-card {
+    width: 378px;
+    height: 255px;
+    /* background: yellow; */
+    /* outline: 1px solid black */
+}
+
+.promo .blog {
+    flex: 1;
+    width: 100%;
+    height: 166px;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/* close promo */
+
+/* open flip module */
+
+.flip-container {
+    perspective: 1800px;
+}
+
+.flip-container:hover .flip-page{
+    transform: rotateY(180deg);
+}
+
+.flip-page {
+    transition: 350ms ease-in;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-front, .flip-back{
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    background: white
+}
+
+/* close flip module */
+
+/* open main */
+
+
+#box-wrap {
+    display: flex;
+    width: 756px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.box-row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img, .big-img{
+    height: 379px;
+    width: 378px;
+}
+
+.img {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.img .link, .img .small-img {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+
+}
+
+.link div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    height: 100%;
+
+}
+
+.link .orange {
+    padding-top: 10px;
+    color: orangered;
+}
+
+.white-left {
+    width: 0;
+    position: relative;
+    top: -112px;
+    left: 0px;
+    color: white;
+    /* transform-origin: 0px 0px;  */
+    transform: rotateY(180deg);
+}
+.white-right {
+    width: 0;
+    position: relative;
+    top: -105px;
+    left: 188px;
+    color: white;
+}
+
+.big-img {
+    background-color: red;
+    /* height:379px;
+    width: 378px */
+}
+
+/* close main */
+
+/* open footer */
+
+footer{
+    background-color: white;
+    margin: auto;
+    width: 756px
+}
+.read-more {
+    width: 100%;
+    height: 135px;
+    text-align: center;
+    line-height: 135px 
+}
+.black {
+    background-color: black;
+    width: 100%;
+    height: 150px
+}
+/* close footer */
+
+figure {
+    margin-bottom: 0;
+}
